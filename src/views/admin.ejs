@@ -12,12 +12,13 @@
     <ul>
         <% posts.forEach(post => { %>
             <li>
-                <a href="/admin/edit/<%= post.id %>" method="post"><%= post.title %></a>
-                <a href="/admin/delete/<%= post.id %>" method="post"><%= post.title %></a>
+                <a href="/admin/edit/<%= post.id %>" method="post"><%= post.title %> EDIT</a> | 
+                <a href="/admin/delete/<%= post.id %>" method="post"><%= post.title %> DELETE</a>
             </li>
         <% }) %>
         <div>
         </div>
+        <a href="/">Voltar</a>
     </ul>
 </body>
 </html>

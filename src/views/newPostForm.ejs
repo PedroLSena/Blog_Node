@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Novo Post</title>
+</head>
+<body>
+    <h1>Criar Novo Post</h1>
+    <form action="/admin/create" method="POST">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="content">Conteúdo:</label>
+        <textarea id="content" name="content" required></textarea>
+        
+        <button type="submit">Criar Post</button>
+    </form>
+
+    <a href="/admin">Voltar</a>
+</body>
+</html>
